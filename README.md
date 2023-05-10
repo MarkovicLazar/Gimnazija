@@ -1,0 +1,2 @@
+# Gimnazija
+Nemate pojma
