@@ -20,6 +20,29 @@
 .centre{
     text-align: center;
 }
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    overflow: auto;
+    display: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: white;
+}
+.content a{
+    border-bottom: red 2px;
+    display: block;
+}
+.content div{
+    background: pink;
+}
 body {
     max-width: 100%;
     overflow-x: hidden;
@@ -62,12 +85,8 @@ nav{
     word-spacing: 5px;
     clip-path: inset(0px 0px -5px 0px);
 }
-nav div{
-    width: 1366px;
-    margin-left: auto;
-    margin-right: auto;
-}
-nav a{
+
+nav a, div{
     text-decoration: none;
     color: black;
     font-family: 'Montserrat', sans-serif;
