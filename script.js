@@ -7,23 +7,4 @@ $(document).ready(function() {
         $('#active').addClass('underline');
         $(this).removeClass('underline');
     });
-    $('#da_olimpijada_button').click(function(){
-        $('#pratim_div').show();
-        $('#ne_pratim_br').hide();
-    });
-    $('#ne_olimpijada_button').click(function(){
-        $('#pratim_div').hide();
-        $('#ne_pratim_br').show();
-    });
-    $('#treniram_button').click(function(){
-        $('#treniram_input').show();   
-        $('#ne_treniram_br').show(); 
-    });
-    $('#ne_treniram_button').click(function(){
-        $('#treniram_input').hide(); 
-        $('#ne_treniram_br').hide();  
-    });
-    $('#treniram_input').click(function(){
-        $(this).val('');
-    });
 });
